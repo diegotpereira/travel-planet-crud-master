@@ -10,6 +10,6 @@
 </head>
 <body>
       @include('partials.nav')
-      <main>@yield('content</main>
+      <main>@yield('content')</main>
 </body>
 </html>

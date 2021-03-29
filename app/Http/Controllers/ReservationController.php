@@ -109,6 +109,6 @@ class ReservationController extends Controller
         $reservation = Reservation::find($reservation->id);
         $reservation->delete();
 
-        return redirect('dashboard/reservations')->with('sucesso', 'Sucesso em deletar sua reserva!.')
+        return redirect('dashboard/reservations')->with('sucesso', 'Sucesso em deletar sua reserva!.');
     }
 }
