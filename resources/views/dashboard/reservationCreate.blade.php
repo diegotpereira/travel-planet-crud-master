@@ -34,7 +34,7 @@
 
                 <div class="col-sm-6">
                    <div class="form-group">
-                      <label for="chegada"></label>
+                      <label for="chegada">Chegada</label>
                       <input type="date" class="form-control" name="chegada" placeholder="00/00/0000">
                    </div>
                 </div>

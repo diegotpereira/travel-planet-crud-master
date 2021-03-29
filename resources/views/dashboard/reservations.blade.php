@@ -26,7 +26,7 @@
              <td>{{ $reservation->partida }}</td>
              <td>{{ $reservation->room['tipo'] }}</td>
              <td>{{ $reservation->numero_convidados }}</td>
-             <td>{{ $reservation->room['preco'] }}</td>
+             <td>${{ $reservation->room['preco'] }}</td>
 
              <td><a href="/dashboard/reservations/{{ $reservation->id }}/edit" class="btn btn-sm btn-sucess">Editar</a></td>
           </tr>

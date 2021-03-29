@@ -9,7 +9,7 @@
        @foreach($hotels as $hotel)
        <div class="col-sm-4">
            <div class="card mb-3">
-               <div style="background-image:url('{{ $hotel->image }}');height:300px;background-size:cover;" class="img-fluid" alt="Front of hotel"></div>
+               <div style="background-image:url('{{ $hotel->imagem }}');height:300px;background-size:cover;" class="img-fluid" alt="Front of hotel"></div>
                <div class="card-body">
                   <h5 class="card-title">{{ $hotel->nome }}</h5>
                   <small class="text-muted">{{ $hotel->localizacao }}</small>
