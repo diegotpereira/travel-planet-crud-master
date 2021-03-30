@@ -1,14 +1,20 @@
 @extends('index')
 
-@section('title', 'home')
+@section('title', 'Home')
 
 @section('content')
 
-<div class="jumbotron text-light" style="background-image: url('https://source.unsplash.com/1600x900/?nature');">
+<div class="jumbotron text-light" style="background-image: url('https://source.unsplash.com/1800x900/?nature');">
     <div class="container">
-      <h1 class="display-3">Gestão de reservas facilitada.</h1>
-      <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam in quia natus magnam ducimus quas molestias velit vero maiores. Eaque sunt laudantium voluptas. Fugiat molestiae ipsa delectus iusto vel quod</p>
-      <a href="/login" class="btn btn-success btn-lg my-2"></a>
+        @if(Auth::user())
+            <h1 class="display-4">Bem vindo, {{ Auth::user()->nickname}}!</h1>
+            <p class="lead">Para o seu balcão único para gerenciamento de reservas.</p>
+            <a href="/dashboard" class="btn btn-success btn-lg my-2">Visualize seu painel</a>
+        @else
+        <h1 class="display-3">Reservation management made easy.</h1>
+            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam in quia natus magnam ducimus quas molestias velit vero maiores. Eaque sunt laudantium voluptas. Fugiat molestiae ipsa delectus iusto vel quod.</p>
+            <a href="/login" class="btn btn-success btn-lg my-2">Sign Up for Access to Thousands of Hotels</a>
+        @endif
     </div>
 </div>
 <div class="container">
