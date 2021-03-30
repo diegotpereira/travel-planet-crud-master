@@ -28,13 +28,13 @@
              <td>{{ $reservation->numero_convidados }}</td>
              <td>${{ $reservation->room['preco'] }}</td>
 
-             <td><a href="/dashboard/reservations/{{ $reservation->id }}/edit" class="btn btn-sm btn-sucess">Editar</a></td>
+             <td><a href="/dashboard/reservations/{{ $reservation->id }}/edit" class="btn btn-sm btn-success">Editar</a></td>
           </tr>
           @endforeach
       </tbody>
    </table>
 
-   @if(!empty(Session::get('sucess')))
+   @if(!empty(Session::get('success')))
       <div class="alert alert-success">{{ Session::get('success') }}</div>
    @endif
 

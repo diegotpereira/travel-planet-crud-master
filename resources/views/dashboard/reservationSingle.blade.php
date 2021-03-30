@@ -22,7 +22,7 @@
                    <p class="card-text">{{ $hotelInfo->descricao }}</p>
                    <p class="card-text"><strong>Chegada: </strong>{{ $reservation->chegada }}</p>
                    <p class="card-text"><strong>Partida: </strong>{{ $reservation->partida }}</p>
-                   <p class="card-text"><strong>Sala: </strong>{{ $reservation->room['tipo'] }}</p>
+                   <p class="card-text"><strong>Quarto: </strong>{{ $reservation->room['tipo'] }}</p>
                    <p class="card-text"><strong>Convidados: </strong>{{ $reservation->numero_convidados }}</p>
                    <p class="card-text"><strong>Preço: </strong>{{ $reservation->room['preco'] }}</p>
                  </div>

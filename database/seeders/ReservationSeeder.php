@@ -31,6 +31,30 @@ class ReservationSeeder extends Seeder
                 'numero_convidados' => 1,
                 'chegada' => '2021-03-22',
                 'partida' => '2021-03-29'
+            ],
+
+            [
+                'user_id' =>'1',
+                'room_id' => 3,
+                'numero_convidados' => 3,
+                'chegada' => '2021-04-05',
+                'partida' => '2021-05-08'
+            ],
+
+            [
+                'user_id' =>'1',
+                'room_id' => 3,
+                'numero_convidados' => 3,
+                'chegada' => '2021-05-12',
+                'partida' => '2021-05-28'
+            ],
+
+            [
+                'user_id' =>'1',
+                'room_id' => 2,
+                'numero_convidados' => 2,
+                'chegada' => '2021-04-04',
+                'partida' => '2021-04-09'
             ]
         ];
         foreach ($reservations as $reservation) {
