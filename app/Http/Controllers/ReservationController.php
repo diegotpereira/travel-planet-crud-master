@@ -17,7 +17,7 @@ class ReservationController extends Controller
     public function index()
     {
         //
-        $reservations = Reservation::with('room', 'room.hotel')->orderBy('arrival', 'asc')->get();
+        $reservations = Reservation::with('room', 'room.hotel')->orderBy('chegada', 'asc')->get();
         return view('dashboard.reservations')->with('reservations', $reservations);
     }
 
@@ -54,11 +54,11 @@ class ReservationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Reservation $reservation)
     {
         //
-        $reservation = Reservation::with('room', 'room.hotel')->get()->find('$reservation->id');
-        $hotel_id = $reservation->romm->hotel_id;
+        $reservation = Reservation::with('room', 'room.hotel')->get()->find($reservation->id);
+        $hotel_id = $reservation->room->hotel_id;
         $hotelInfo = Hotel::with('rooms')->get()->find($hotel_id);
 
         return view('dashboard.reservationSingle', compact('reservation', 'hotelInfo'));
