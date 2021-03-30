@@ -11,9 +11,9 @@
             <p class="lead">Para o seu balcão único para gerenciamento de reservas.</p>
             <a href="/dashboard" class="btn btn-success btn-lg my-2">Visualize seu painel</a>
         @else
-        <h1 class="display-3">Reservation management made easy.</h1>
-            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam in quia natus magnam ducimus quas molestias velit vero maiores. Eaque sunt laudantium voluptas. Fugiat molestiae ipsa delectus iusto vel quod.</p>
-            <a href="/login" class="btn btn-success btn-lg my-2">Sign Up for Access to Thousands of Hotels</a>
+        <h1 class="display-3">Gerenciamento de reservas.</h1>
+            <p class="lead">Faça a sua</p>
+            <a href="/login" class="btn btn-success btn-lg my-2">Inscreva-se para ter acesso a milhares de hotéis</a>
         @endif
     </div>
 </div>
